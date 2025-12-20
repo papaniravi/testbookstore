@@ -1,4 +1,4 @@
-ID,title,author_ID,genre,publishedAt,pages,price,currency_code,stock,status_code,createdAt,createdBy,modifiedAt,modifiedBy
+ID,title,author_ID,genre_code,publishedAt,pages,price,currency_code,stock,status_code,createdAt,createdBy,modifiedAt,modifiedBy
 57697915-7d36-43c3-a875-1d5e711d536b,"The Silent Forest",8f7cb3c1-9a52-4e63-8b7b-fcf4e2a0d234,"Fiction","2018-04-12",340,49.99,INR,25,A,"2025-01-01T09:00:00Z","SYSTEM","2025-01-01T09:00:00Z","SYSTEM"
 8b1d4b6d-2c5f-4c1c-ac20-e6a6e022f5b8,"A Brief History of Space",c2ee8f8a-07bb-4272-bc4b-9f6a52fb114d,"Science","2021-09-01",280,69.99,INR,8,L,"2025-01-01T09:05:00Z","SYSTEM","2025-01-01T09:05:00Z","SYSTEM"
 b3c97c1f-2e82-4c5d-9f63-45de1c72bb7d,"Cooking with Fire",a5d9eb73-4f7a-49b2-9515-fbc9f91cb9ed,"Cooking","2020-02-17",220,39.99,INR,0,U,"2025-01-01T09:10:00Z","SYSTEM","2025-01-01T09:10:00Z","SYSTEM"
