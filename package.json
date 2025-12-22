@@ -16,7 +16,8 @@
   "devDependencies": {
     "@cap-js/cds-types": "^0.13.0",
     "@cap-js/sqlite": "^2",
-    "cds-plugin-ui5": "^0.13.0"
+    "cds-plugin-ui5": "^0.13.0",
+    "@cap-js/cds-typer": ">=0.1"
   },
   "scripts": {
     "start": "cds-serve",
@@ -27,5 +28,8 @@
   ],
   "sapux": [
     "app/bookstore-listview"
-  ]
+  ],
+  "imports": {
+    "#cds-models/*": "./@cds-models/*/index.js"
+  }
 }
