@@ -92,6 +92,11 @@
           "pattern": "Books({key}):?query:",
           "name": "BooksObjectPage",
           "target": "BooksObjectPage"
+        },
+        {
+          "pattern": "Books({key})/Chapters({key2}):?query:",
+          "name": "ChaptersObjectPage",
+          "target": "ChaptersObjectPage"
         }
       ],
       "targets": {
@@ -129,6 +134,43 @@
             "settings": {
               "editableHeaderContent": false,
               "contextPath": "/Books",
+              "sectionLayout": "Page",
+              "navigation": {
+                "Chapters": {
+                  "detail": {
+                    "route": "ChaptersObjectPage"
+                  }
+                }
+              },
+              "controlConfiguration": {
+                "Chapters/@com.sap.vocabularies.UI.v1.LineItem#Chapters": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable",
+                    "enableExport": false,
+                    "personalization": {
+                      "column": false,
+                      "sort": false,
+                      "filter": false
+                    }
+                  },
+                  "navigation": {
+                    "detail": {
+                      "route": "ChaptersObjectPage"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ChaptersObjectPage": {
+          "type": "Component",
+          "id": "ChaptersObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/Books/Chapters",
               "sectionLayout": "Page"
             }
           }

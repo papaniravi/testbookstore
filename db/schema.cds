@@ -18,6 +18,7 @@ entity Books : cuid, managed {
     status      : Association to BookStatus;
     Chapters    : Composition of many Chapters
                       on Chapters.book = $self;
+                      
 }
 
 entity Genres {

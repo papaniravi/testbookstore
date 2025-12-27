@@ -213,20 +213,60 @@ annotate service.Chapters with @(
     UI.LineItem #Chapters : [
         {
             $Type : 'UI.DataField',
-            Value : book.Chapters.title,
+            Value : title,
             Label : 'Title',
         },
         {
             $Type : 'UI.DataField',
-            Value : book.Chapters.pages,
+            Value : pages,
             Label : 'Pages',
         },
         {
             $Type : 'UI.DataField',
-            Value : book.Chapters.number,
+            Value : number,
             Label : 'Number',
         },
-    ]
+    ],
+    UI.HeaderInfo : {
+        TypeName : 'Chapter',
+        TypeNamePlural : 'Chapters',
+        Title : {
+            $Type : 'UI.DataField',
+            Value : title,
+        },
+        Description : {
+            $Type : 'UI.DataField',
+            Value : number,
+        },
+    },
+    UI.Facets : [
+        {
+            $Type : 'UI.ReferenceFacet',
+            ID : 'ChapterDetails',
+            Label : 'Chapter Details',
+            Target : '@UI.FieldGroup#ChapterDetails',
+        },
+    ],
+    UI.FieldGroup #ChapterDetails : {
+        $Type : 'UI.FieldGroupType',
+        Data : [
+            {
+                $Type : 'UI.DataField',
+                Value : title,
+                Label : 'Title',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : number,
+                Label : 'Chapter Number',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : pages,
+                Label : 'Pages',
+            },
+        ],
+    },
 );
 
 annotate service.Books with {
