@@ -147,16 +147,7 @@
                   "tableSettings": {
                     "type": "ResponsiveTable",
                     "enableExport": false,
-                    "personalization": {
-                      "column": false,
-                      "sort": false,
-                      "filter": false
-                    }
-                  },
-                  "navigation": {
-                    "detail": {
-                      "route": "ChaptersObjectPage"
-                    }
+                    "personalization": false
                   }
                 }
               }
@@ -170,7 +161,7 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Books/Chapters",
+              "contextPath": "/Chapters",
               "sectionLayout": "Page"
             }
           }
