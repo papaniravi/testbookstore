@@ -1,5 +1,7 @@
 using {tutorial.db as db} from '../db/schema';
 
+// Bookstore Service Definition
+
 service BookstoreService {
     entity Books      as projection on db.Books
         actions {
