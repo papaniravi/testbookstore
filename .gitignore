@@ -32,3 +32,8 @@ mta_archives/
 
 # @cap-js/cds-typer
 @cds-models
+
+# UI5 Build artifacts
+app/*/dist/
+app/*/archive.zip
+app/*/.env
