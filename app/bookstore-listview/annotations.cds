@@ -1,6 +1,8 @@
 using BookstoreService as service from '../../srv/service';
 using from '@sap/cds/common';
 
+// Custom annotations for Bookstore UI
+
 annotate service.Books with @(
     UI.FieldGroup #GeneratedGroup : {
         $Type : 'UI.FieldGroupType',
@@ -117,6 +119,7 @@ annotate service.Books with @(
     ],
     UI.SelectionFields : [
         status_code,
+        genre_code,
     ],
     UI.HeaderInfo : {
         TypeName : 'Book',
