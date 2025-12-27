@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "4.0"
+metadata:
+  name: bookstorelistview
+type: application
+builder:
+  resources:
+    excludes:
+      - "/test/**"
+      - "/localService/**"
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          url: https://your-onpremise-system.com:443
+          client: "100"
+          scp: false
+        credentials:
+          username: env:ABAP_USERNAME
+          password: env:ABAP_PASSWORD
+        app:
+          name: ZBOOKSTORE
+          package: ZLOCAL
+          transport: ""
+        exclude:
+          - /test/
+          - /localService/

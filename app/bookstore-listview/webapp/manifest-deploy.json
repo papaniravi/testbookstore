@@ -1,0 +1,15 @@
+{
+  "sap.cloud": {
+    "service": "bookstore.service",
+    "public": true
+  },
+  "sap.app": {
+    "id": "bookstorelistview",
+    "applicationVersion": {
+      "version": "0.0.1"
+    }
+  },
+  "sap.platform.abap": {
+    "uri": "/sap/opu/odata/sap/ZBOOKSTORE_SRV"
+  }
+}
