@@ -1,0 +1,1 @@
+using BookstoreService as service from '../../srv/service';

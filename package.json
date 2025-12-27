@@ -20,13 +20,15 @@
     "@cap-js/cds-typer": ">=0.1"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-booksore-listview": "cds watch --open booksorelistview/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "workspaces": [
     "app/*"
   ],
   "sapux": [
-    "app/bookstore-listview"
+    "app/bookstore-listview",
+    "app/booksore-listview"
   ],
   "imports": {
     "#cds-models/*": "./@cds-models/*/index.js"
